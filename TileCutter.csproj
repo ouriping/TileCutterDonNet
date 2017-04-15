@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{FD3BE3F8-D4CD-47A6-9FD7-52CC94546447}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>TileCutter_new</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BMap\LngLat.cs" />
+    <Compile Include="BMap\LngLatProjection.cs" />
+    <Compile Include="BMap\Pixel.cs" />
+    <Compile Include="BMap\Point.cs" />
+    <Compile Include="BMap\Projection.cs" />
+    <Compile Include="BMap\ProjectionUtil.cs" />
+    <Compile Include="TileCutter.Properties\Resources.cs" />
+    <Compile Include="TileCutter.Properties\Settings.cs" />
+    <Compile Include="TileCutter\Cutter.cs" />
+    <Compile Include="TileCutter\HTMLGenerator.cs" />
+    <Compile Include="TileCutter\LayerUsage.cs" />
+    <Compile Include="TileCutter\Preprocessor.cs" />
+    <Compile Include="TileCutter\Program.cs" />
+    <Compile Include="TileCutter\TileCutter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TileCutter.Properties\Resources.resources" />
+    <EmbeddedResource Include="TileCutter\TileCutter.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,5 @@
+F:\githubCode\TileCutterDonNet\bin\Debug\TileCutter_new.exe
+F:\githubCode\TileCutterDonNet\bin\Debug\TileCutter_new.pdb
+F:\githubCode\TileCutterDonNet\obj\x86\Debug\TileCutter.csprojResolveAssemblyReference.cache
+F:\githubCode\TileCutterDonNet\obj\x86\Debug\TileCutter_new.exe
+F:\githubCode\TileCutterDonNet\obj\x86\Debug\TileCutter_new.pdb
