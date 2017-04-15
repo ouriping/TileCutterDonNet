@@ -50,6 +50,9 @@
   <ItemGroup>
     <EmbeddedResource Include="TileCutter.Properties\Resources.resources" />
     <EmbeddedResource Include="TileCutter\TileCutter.resources" />
+    <EmbeddedResource Include="TileCutter\TileCutter.resx">
+      <DependentUpon>TileCutter.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
